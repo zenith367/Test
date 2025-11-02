@@ -2,7 +2,7 @@ const express = require("express");
 const axios = require("axios");
 const router = express.Router();
 
-const OMDB_API_KEY = process.env.OMDB_API_KEY; // loaded from environment variables
+const OMDB_API_KEY = process.env.OMDb_API_KEY; // loaded from environment variables
 console.log("OMDb API Key (for debugging):", OMDB_API_KEY); // <-- add this
 
 // GET /api/movies?title=Inception
