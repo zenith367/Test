@@ -1,7 +1,7 @@
 const admin = require("firebase-admin");
 
-// Load the service account JSON uploaded as a Render secret
-const serviceAccount = require("/opt/render/project/env/serviceAccountKey.json");
+// Load the service account JSON from Render secret
+const serviceAccount = JSON.parse(process.env.SERVICE_ACCOUNT_KEY);
 
 // Initialize Firebase Admin SDK
 admin.initializeApp({
