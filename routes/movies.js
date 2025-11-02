@@ -4,6 +4,7 @@ const router = express.Router();
 
 const OMDB_API_KEY = process.env.OMDB_API_KEY; // loaded from .env
 
+
 // GET /api/movies?title=Inception
 router.get("/", async (req, res) => {
   const { title } = req.query;
